@@ -3,6 +3,7 @@
 body{
     background-color: rgb(44, 134, 82);
 }
+
 #Calculator {
     display: flex;
     flex-direction: column;
@@ -16,6 +17,12 @@ body{
     margin-bottom: 15px;
 }
 #OutputScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:white;
+    font-family: 'Calculator', sans-serif;
     height: 80px;
     width: 260px;
     box-shadow: inset 2px 3px 5px 0px rgba(0,0,0,0.7);
@@ -23,16 +30,17 @@ body{
     margin: 20px auto 5px auto;
     background: #3B3B3B;
 }
-#answer{
-    color: white;
-    text-align: right;
-    margin-top: 35px;
-    margin-right: 10px;
+.current{
     font-size: 40px;
-    font-family: 'Calculator', sans-serif;
+    margin-right: 5px;
 }
 
-#buttons{   
+.previous {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+#secondGrid{   
     margin: 10px 15px 15px 17px;
 }
 
@@ -49,10 +57,34 @@ button{
     margin-top: 5px;
 }
 
+.btnnumber:hover{
+    background-color: rgb(197, 134, 38);
+}
+
+.decimal:hover{
+    background-color: rgb(197, 134, 38);
+}
+
+.btnclear:hover{
+    background-color: rgb(235, 81, 81);
+}
+
+.btnoperator:hover{
+    background-color: rgb(45, 141, 173);
+}
+
+.btnequal:hover{
+    background-color: rgb(49, 137, 49);
+} 
+
 #MadeBy, a{
     text-align: center;
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
     color: white;
+}
+
+#span-two {
+    grid-column: span 2;
 }
