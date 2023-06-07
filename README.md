@@ -1,3 +1,3 @@
-# Calculator
+# Project-Calculator/
 
-https://genezijlboot.github.io/Calculator/
+https://genezijlboot.github.io/Project-Calculator
